@@ -7,9 +7,9 @@ const person = {
         return `${this.firstName} ${this.lastName}`;
     },
     role:      'Software Developer',
-    avatar:    '/images/avatar.jpg',
+    avatar:    '/images/profile_avatar.png',
     location:  'Asia/Kolkata',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    languages: ['English', 'Hindi']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -63,44 +63,47 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
+        display: false,
         link: 'https://cal.com'
     },
-    intro: {
+    intro : {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: (
+            <div style={{ textAlign: 'justify' }}>
+                Abhisek is a software developer based in India, passionate about creating efficient and scalable solutions for real-world problems. His work spans web development, backend systems, and cloud technologies. With a knack for turning complex requirements into robust, maintainable code, Abhisek bridges the gap between innovation and execution, ensuring that technology serves both users and businesses effectively.
+            </div>
+        )
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'CONSCIOUSPHERE',
+                timeframe: '2024 - Present',
+                role: 'Software Developer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
+                    
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Qikut',
+                timeframe: 'Feb/2024 - May/2024',
+                role: 'Intern - Software Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Spearheaded the UI design of the mobile application utilizing Figma, ensuring intuitive user experiences and visually appealing interfaces.</>,
+                    <>Developed frontend components and features leveraging JavaScript (JS) and TypeScript (TS) within the React framework, contributing to the enhancement of user interaction and interface responsiveness.</>
                 ],
-                images: [ ]
+                images: [{
+                    src: '/images/projects/project-01/qikut_progress.png',
+                    alt: 'Project image',
+                    width: 16,
+                    height: 9
+                }, ]
             }
         ]
     },
@@ -109,12 +112,11 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
-            },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Vignan Institute of Technology and Management',
+                description: <><strong>Bachelor's of Technology</strong> in <strong>Computer Science & Engineering.</strong> <br/> 
+                Biju Patnaik University of Technology, Rourkela, Odisha, IN <br/>
+                Nov 2024 - Jun 2025 <br/>
+                Grade: 8.1 CGPA</>,
             }
         ]
     },
@@ -127,25 +129,7 @@ const about = {
                 description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
-            },
-            {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
+                        src: '/images/projects/project-01/qikut_progress.jpg',
                         alt: 'Project image',
                         width: 16,
                         height: 9
