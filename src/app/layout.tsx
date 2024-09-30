@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
 
@@ -104,6 +105,7 @@ export default function RootLayout({ children } : RootLayoutProps) {
 						fillWidth minHeight="0">
 						<RouteGuard>
 							{children}
+							<Analytics />
 						</RouteGuard>
 					</Flex>
 				</Flex>
