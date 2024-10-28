@@ -115,7 +115,7 @@ const about = {
                 name: 'Vignan Institute of Technology and Management',
                 description: <><strong>Bachelor's of Technology</strong> in <strong>Computer Science & Engineering.</strong> <br/> 
                 Biju Patnaik University of Technology, Rourkela, Odisha, IN <br/>
-                Nov 2024 - Jun 2025 <br/>
+                Nov 2021 - Jun 2025 <br/>
                 Grade: 8.1 CGPA</>,
             }
         ]
