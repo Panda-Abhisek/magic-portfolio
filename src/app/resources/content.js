@@ -29,7 +29,7 @@ const social = [
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/abhisek-panda03',
+        link: 'https://www.linkedin.com/in/abhisek-panda-',
     },
     {
         name: 'X',
@@ -77,14 +77,14 @@ const about = {
     },
     work: {
         display: true, // set to false to hide this section
-        title: 'Work Experience',
+        title: 'Internships',
         experiences: [
             {
                 company: 'NEEVAS',
                 timeframe: '2024 - Present',
                 role: 'Salesforce Developer',
                 achievements: [
-                    
+                    <>📍Earned the Developer Super Set & Apex Specialist Superbadge and various Trailhead badges for expertise in automating processes and integrating systems.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     
