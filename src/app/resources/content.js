@@ -105,25 +105,13 @@ const about = {
             integrating systems.
           </>,
           <>
-            Completed a comprehensive Salesforce Developer training program
-            through Salesforce Trailhead.
-          </>,
-
-          <>
             Gained hands-on experience with Salesforce platform fundamentals,
             including data modeling, security, and automation.
           </>,
-
-          <>
-            Developed and customized Salesforce applications using Apex
-            (Salesforce’s proprietary programming language) and Visualforce.
-          </>,
-
           <>
             Created and managed custom objects, fields, and relationships to
             support business processes.
           </>,
-
           <>
             Designed and implemented workflows, process automation, and
             validation rules to streamline operations.
