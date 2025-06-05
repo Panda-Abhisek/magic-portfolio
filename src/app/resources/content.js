@@ -96,7 +96,7 @@ const about = {
     experiences: [
       {
         company: "NEEVAS",
-        timeframe: "2024 - Present",
+        timeframe: "Oct/2024 - Dec/2024",
         role: "Salesforce Developer",
         achievements: [
           <>
