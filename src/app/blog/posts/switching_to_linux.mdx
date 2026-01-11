@@ -1,0 +1,157 @@
+---
+title: "Switching from Windows to Arch Linux: What Broke and Why"
+date: 2026-01-11
+tags: [linux, arch-linux, dev-setup, workflow]
+draft: false
+---
+
+## Why I Switched
+
+I didn’t switch from Windows to Arch Linux because Windows is bad or Linux is superior. I switched because I wanted more control over my development environment and a better understanding of what was actually running on my system.
+
+Windows worked, but a lot of things felt abstracted away. Services ran without me knowing why. Tools worked until they didn’t. I wanted a system where problems were visible, even if that meant I had to deal with them myself.
+
+Arch Linux felt like the honest option.
+
+---
+
+## The First Illusion: Installation Success
+
+The installation itself wasn’t the nightmare people describe.  
+I followed the documentation, partitioned the disk, installed the base system, configured the bootloader, and rebooted.
+
+The system booted.
+
+At that moment, it felt like the hard part was over. It wasn’t. That was just the calm before the real learning started.
+
+---
+
+## What Actually Broke
+
+### Git Showing Every File as Modified
+
+The first red flag appeared when I ran `git status` inside an existing project.
+
+Every file was marked as modified.
+
+Nothing had changed in the code. The reason turned out to be differences in:
+- Line endings (CRLF on Windows vs LF on Linux)
+- File permissions
+- Git configuration carried over from my previous OS
+
+This was my first real lesson:  
+the same repository can behave very differently across operating systems.
+
+---
+
+### Docker Behaving Differently Than Expected
+
+Docker was installed. Containers ran. And yet, things felt off.
+
+Problems included:
+- Permission issues when running Docker commands
+- Needing to understand user groups instead of relying on `sudo`
+- Containers failing because ports were already in use
+
+Docker itself wasn’t broken. My assumptions were.
+
+On Linux, Docker integrates more deeply with the system. That’s powerful, but it also means system-level conflicts show up immediately.
+
+---
+
+### PostgreSQL vs Docker: Port Conflicts
+
+One of the more confusing moments was PostgreSQL refusing to cooperate.
+
+The issue:
+- PostgreSQL was already running as a system service
+- Docker containers tried to bind to the same port
+- Everything failed silently until I checked which services were actually listening
+
+This forced me to understand:
+- How system services work
+- How to check open ports
+- The difference between host-managed services and containerized ones
+
+Linux doesn’t hide what’s running. It expects you to know.
+
+---
+
+### Application Launch Expectations Breaking
+
+On Windows, launching applications is predictable.  
+On Arch, especially with a custom desktop environment, it depends on configuration.
+
+I had to:
+- Manually verify paths
+- Understand how desktop entries work
+- Learn how applications are discovered and launched
+
+Nothing was “missing.” It just wasn’t pre-wired the way I was used to.
+
+---
+
+## The KDE and Desktop Environment Rabbit Hole
+
+Configuring the desktop environment took more time than expected.
+
+Things I assumed would exist:
+- Certain window behaviors
+- Automatic virtual desktop handling
+- Familiar shortcuts
+
+Some existed. Some didn’t. Some needed manual configuration.
+
+Linux gives you choices, not opinions.  
+If something feels wrong, it’s usually because you haven’t decided how it should behave yet.
+
+---
+
+## What Actually Improved
+
+Despite the friction, a few things immediately became better:
+
+- A terminal-first workflow that feels natural
+- Clear visibility into running services
+- Better understanding of package management
+- Less “mystery behavior” when something breaks
+
+Problems are more explicit. That alone changes how you debug.
+
+---
+
+## Things I Had to Unlearn
+
+Switching operating systems also meant unlearning habits:
+
+- Expecting GUI-first solutions
+- Assuming defaults are optimized for my workflow
+- Expecting consistency without configuration
+
+Linux rewards understanding. Assumptions don’t survive long here.
+
+---
+
+## Who I Would Recommend Arch Linux To
+
+### Good fit if:
+- You want control over your system
+- You’re comfortable debugging issues
+- You want to learn how things work under the hood
+
+### Not a good fit if:
+- You need everything to work out of the box
+- You dislike reading documentation
+- You want zero downtime
+
+Neither group is better. They just want different things.
+
+---
+
+## Final Thoughts
+
+Switching to Arch Linux didn’t magically make me more productive.  
+It made me more aware of my system.
+
+That awareness changed how I approach tools, services, and debugging.  
+For me, that trade-off was worth it.
