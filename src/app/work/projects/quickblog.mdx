@@ -1,0 +1,73 @@
+---
+title: "Blog Management App | Full-Stack CRUD with React & Spring Boot"
+publishedAt: "2026-01-10"
+summary: "A full-stack blog management platform with authentication and CRUD operations built using React (frontend) and Spring Boot (backend)."
+images:
+  - "/images/blog-cover.png"
+team:
+  - name: "Abhisek Panda"
+    role: "Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/abhisek-panda-"
+---
+
+## Overview
+
+I built a **Full-Stack Blog Management App** to learn how modern web apps handle full-lifecycle blog workflows including authentication, authorization, and CRUD operations. This platform consists of a **React frontend** and a **Spring Boot backend API** working together to deliver real-time blog creation, editing, display, and deletion.
+
+The project helped me understand how to connect front-end UI interactivity with secure REST APIs backed by databases and real user sessions.
+
+## Architecture
+
+**Frontend (React / Vite)**  
+- Built with **React** and **Vite** for speedy development feedback  
+- Uses **Tailwind CSS** and **Material UI (MUI)** for responsive layout and polished UI components  
+- Routing via **React Router DOM**  
+- Rich text editing using **Quill editor**  
+- **Axios** to interact with backend APIs
+
+**Backend (Spring Boot API)**  
+- **Spring Boot 3.5+** as the core framework  
+- **PostgreSQL** database persistence  
+- **Spring Security + JWT** for user authentication and token-based sessions  
+- **Spring Data JPA** for clean database access patterns  
+- Swagger/OpenAPI documentation via **SpringDoc**
+
+This separation lets each layer focus on its strength: a rich, interactive UI and a secure, high-performance service layer.
+
+## Key Features
+
+- **User Authentication:** Sign up, log in, and session control with JWT  
+- **CRUD Operations:** Create, read, update, delete blog posts with secure endpoints  
+- **Rich Text Editor:** Structured blog content creation via Quill  
+- **Responsive UI:** Works across devices with Tailwind + MUI components  
+- **REST Security:** Secured backend with role support and token validation
+
+## Tech Stack
+
+- **React** + **Vite**  
+- **Tailwind CSS** + **Material UI (MUI)**  
+- **React Router DOM**  
+- **Axios** for HTTP client  
+- **Spring Boot 3.x**  
+- **PostgreSQL**  
+- **Spring Security + JWT**  
+- **Spring Data JPA**
+
+## What I Learned
+
+This build wasn’t just “a CRUD app.”
+
+- How to stitch **frontend routing** with backend authorization correctly
+- How to secure API endpoints so only authenticated users can mutate data
+- Structuring REST APIs to match UI needs rather than forcing UI to match APIs
+- Managing state in React with server-cached data patterns
+- Deployment considerations when pairing a static frontend with a dynamic backend
+
+## How to Run
+
+### Frontend
+```bash
+cd blog-management-react
+npm install
+npm run dev
