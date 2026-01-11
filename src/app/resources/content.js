@@ -207,6 +207,68 @@ const about = {
     title: "Technical skills",
     skills: [
       {
+        title: "Core Java",
+        description: (
+          <>
+            Strong understanding of object-oriented programming, collections,
+            exception handling, and core language fundamentals used in
+            real-world backend development.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "SQL & Databases",
+        description: (
+          <>
+            Experience with writing optimized SQL queries, understanding
+            relational database design, and working with MySQL and PostgreSQL.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Web Development",
+        description: (
+          <>
+            Hands-on experience with HTML and CSS, and building dynamic
+            server-side web applications using JDBC.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Java Web Technologies",
+        description: (
+          <>
+            Built dynamic web applications using Servlets and JSP, handling
+            request-response flow, session management, and MVC-style
+            architecture.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Spring & Spring Boot",
+        description: (
+          <>
+            Experience with Spring Core and Spring Boot for building scalable,
+            maintainable backend services and RESTful APIs.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Tools & Platforms",
+        description: (
+          <>
+            Comfortable working with Git, GitHub, Docker, Postman, IntelliJ
+            IDEA, and VS Code for development, testing, and version control.
+          </>
+        ),
+        images: [],
+      },
+      {
         title: "Figma",
         description: (
           <>Able to prototype in Figma with Once UI with unnatural speed.</>
