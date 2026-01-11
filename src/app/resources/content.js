@@ -95,6 +95,42 @@ const about = {
     title: "Internships",
     experiences: [
       {
+        company: "JSpiders",
+        timeframe: "Jan/2025 - Sep/2025",
+        role: "Java Full Stack Trainee",
+        achievements: [
+          <>
+            Completed a comprehensive professional training program focused on
+            full-stack Java and backend development over nine months.
+          </>,
+          <>
+            Built a strong foundation in Core Java and SQL, including
+            object-oriented programming, collections, exception handling, and
+            relational database concepts.
+          </>,
+          <>
+            Learned web development fundamentals using HTML, CSS, and JDBC for
+            dynamic server-side interactions.
+          </>,
+          <>
+            Developed dynamic web applications using Servlets and JSP with
+            real-world request and response handling.
+          </>,
+          <>
+            Gained in-depth experience with the Spring ecosystem, including
+            Spring Core and Spring Boot, to build scalable and maintainable
+            backend services.
+          </>,
+          <>
+            Strengthened understanding of backend architecture patterns and
+            database-driven application design through hands-on practice.
+          </>,
+        ],
+        images: [
+          // optional: leave empty if not needed
+        ],
+      },
+      {
         company: "NEEVAS",
         timeframe: "Oct/2024 - Dec/2024",
         role: "Salesforce Developer",
